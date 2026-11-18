@@ -1,0 +1,85 @@
+/* Schlichtes Layout ohne externe Schriften oder Skripte (keine Daten an Dritte). */
+:root {
+    --akzent: #C8102E;
+    --text: #1d1d1f;
+    --grau: #6e6e73;
+    --hintergrund: #fbf7f8;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --akzent: #ff5a6e;
+        --text: #f5f5f7;
+        --grau: #a1a1a6;
+        --hintergrund: #1c1c1e;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--hintergrund);
+}
+
+main {
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 3rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+header img {
+    width: 64px;
+    height: 64px;
+    border-radius: 14px;
+}
+
+header a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    color: var(--akzent);
+}
+
+a {
+    color: var(--akzent);
+}
+
+.stand,
+footer {
+    color: var(--grau);
+    font-size: 0.9rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+footer {
+    margin-top: 3rem;
+    border-top: 1px solid color-mix(in srgb, var(--grau) 30%, transparent);
+    padding-top: 1rem;
+}
